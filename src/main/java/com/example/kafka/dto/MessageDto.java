@@ -14,6 +14,8 @@ public class MessageDto {
         this.message = message;
     }
 
+    public MessageDto() {}
+
     @Override
     public String toString() {
         return String.format("{name=%s, message=%s}", name, message);
