@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>checkOut</title>
+</head>
+<body>
+<div class="container">
+    <form name="checkOutEntity" action="summitCheckout" method="post">
+        <div class="form-group">
+            <label id="member">member</label>
+            <input type="text" class="form-control" id="memberId" name="memberId" value="10001" required>
+        </div>
+        <div class="form-group">
+            <label id="product">product</label>
+            <input type="text" class="form-control" id="productId" name="productId" value="200001" required>
+        </div>
+        <div class="form-group">
+            <label id="amount">amount</label>
+            <input type="text" class="form-control" id="amountId" name="amountId" value="30000" required>
+        </div>
+        <div class="form-group">
+            <label id="shipping-address">shippingAddress</label>
+            <textarea class="form-control" id="shippingAddress" name="shippingAddress" value="여기어때" required>
+            </textarea>
+        </div>
+        <button type="submit">결제하기</button>
+    </form>
+</div>
+</body>
+</html>

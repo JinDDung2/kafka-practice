@@ -1,0 +1,15 @@
+spring:
+  h2:
+    console:
+      enabled: true
+    path: /h2-console
+
+  datasource:
+    generateUniqueName: false
+
+  jpa:
+    showSql: true
+    properties:
+      hibernate:
+        ddl-auto: create
+        format_sql: true
